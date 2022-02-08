@@ -20,6 +20,8 @@ class EvenAdder {
             int next = scanner.nextInt();
             if(isEven(next)) {
                 result[i] = next;
+            } else {
+
             }
         }
         return result;
@@ -39,8 +41,9 @@ class EvenAdder {
      */
     private static void reverseArray(int[] array) {
         int[] reversed = new int[array.length];
-        for (int i = 0; i < reversed.length; i++) {
+        for (int i = array.length; i < reversed.length; i++) {
             array[i] = reversed[i];
+            i++;
         }
     }
 }
